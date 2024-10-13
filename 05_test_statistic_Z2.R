@@ -120,5 +120,5 @@ p <- ggplot() +
   scale_x_continuous(limits = c(0, 10), breaks = pretty_breaks(n = 10)) +
   scale_y_continuous(breaks = pretty_breaks(n = 10),labels = scales::number_format(accuracy = 0.1)) + 
   facet_wrap(~ rho_1, 
-             labeller = label_bquote(rho[1] == .(rho_1)~~~~~~over(phantom(0)*phantom(0),phantom(0))~~chi^2~(.(round(unique(results_list$df_est[results_list$rho_1 == rho_1]), 4))~","~.(round(unique(results_list$ncp_est[results_list$rho_1 == rho_1]),4)))))
+             labeller = label_bquote(rho[0] == .(rho_1)~~~~~~over(phantom(0)*phantom(0),phantom(0))~~chi^2~(.(round(unique(results_list$df_est[results_list$rho_1 == rho_1]), 4))~","~.(round(unique(results_list$ncp_est[results_list$rho_1 == rho_1]),4)))))
 p
